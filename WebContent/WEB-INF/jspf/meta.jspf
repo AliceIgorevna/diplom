@@ -1,0 +1,7 @@
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/EDITstyle.css"/>
+
+<!-- Include Required Prerequisites -->
+<script src="${pageContext.request.contextPath}/resources/js/jquery.min.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/resources/js/js-func.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/resources/js/slider.js" type="text/javascript"></script>

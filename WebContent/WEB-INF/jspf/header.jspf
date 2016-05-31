@@ -1,0 +1,42 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<div id="header">
+    <div class="shell">
+        <h1 id="logo"></h1>
+
+        <div id="block">
+            <c:choose>
+                <c:when test="${not empty loggedUser.idUserData}">
+                    Welcome back, ${loggedUser.email}
+                    <a href="logout">Exit</a>
+                </c:when>
+                <c:otherwise>
+                    <a href="login.html">Sign In</a> or
+                    <a href="registrationPageServlet">Register</a>
+                </c:otherwise>
+            </c:choose>
+            <div id="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <c:if test="${not empty loggedUser.idUserData}">
+                        <li><a href="products"> Service </a>
+                            <div class="dd-holder">
+                                <div class="dd-t"></div>
+                                <div class="dd">
+                                    <ul>
+                                        <li><a href="#">&#9654; Cloth</a></li>
+                                        <li><a href="#">&#9654; Shops</a></li>
+                                        <li><a href="#">&#9654; Goods</a></li>
+                                        <li><a href="#">&#9654; Food</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dd-b"></div>
+                            </div>
+                        </li>
+                    </c:if>
+                    <li><a href="projects">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
